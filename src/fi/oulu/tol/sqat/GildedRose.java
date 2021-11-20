@@ -6,7 +6,7 @@ import java.util.List;
 
 public class GildedRose {
 
-	private static List<Item> items = null;
+	public static List<Item> items = null;
 
 	/**
 	 * @param args
@@ -104,4 +104,22 @@ public class GildedRose {
         }
     }
 
+    //constructor
+    public GildedRose() {
+    	items = new ArrayList<Item>();
+    }
+    
+    //getter
+    public List<Item> getItems() {
+    	return items;
+    }
+    //setter
+    public void setItem(Item item) {
+    	items.add(item);
+    }
+    
+    //update one day
+    public void oneDay() {
+    	updateQuality();
+    }
 }
