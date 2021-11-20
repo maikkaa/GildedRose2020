@@ -38,6 +38,7 @@ public class GildedRoseTest {
 			inn.setItem(new Item("+5 Dexterity Vest", 10, 20));
 			inn.oneDay();
 			
+			
 			List<Item> items = inn.getItems();
 			int quality = items.get(0).getQuality() + 1;
 			assertEquals("Failed quality for Dexterity Vest", 20, quality);
